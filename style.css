@@ -1,0 +1,57 @@
+/* General Settings */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+header {
+  background: linear-gradient(135deg, #0d6efd, #17a2b8);
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+#summaryContent {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.benefit-box {
+  transition: transform 0.3s ease;
+}
+
+.benefit-box:hover {
+  transform: translateY(-5px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0d6efd, #17a2b8);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #17a2b8, #0d6efd);
+}
+
+.btn-light {
+  background: #ffffff;
+  border: 1px solid #ced4da;
+}
+
+.btn-light:hover {
+  background: #f8f9fa;
+}
+
+.book-box {
+  transition: transform 0.3s ease;
+}
+
+.book-box:hover {
+  transform: scale(1.05);
+}
