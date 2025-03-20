@@ -11,11 +11,12 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #f8f9fa;
+      line-height: 1.6;
     }
     .header {
       background-color: #4CAF50; /* أخضر داكن */
       color: #fff;
-      padding: 30px 0;
+      padding: 50px 0;
       text-align: center;
     }
     .hero-section {
@@ -24,41 +25,65 @@
       background-position: center;
       color: #fff;
       text-align: center;
-      padding: 100px 20px;
+      padding: 150px 20px; /* زيادة المسافة */
     }
     .hero-section h1 {
-      font-size: 3rem;
+      font-size: 3.5rem; /* زيادة حجم الخط */
       margin-bottom: 20px;
     }
     .hero-section p {
-      font-size: 1.2rem;
+      font-size: 1.5rem; /* زيادة حجم الخط */
       margin-bottom: 30px;
     }
     .reviews-button {
       background-color: #FFA726; /* برتقالي */
       color: #fff;
       border: none;
-      padding: 10px 20px;
+      padding: 15px 30px; /* زيادة حجم الزر */
       border-radius: 5px;
-      font-size: 1rem;
+      font-size: 1.2rem; /* زيادة حجم الخط */
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
     .reviews-button:hover {
       background-color: #FB8C00; /* برتقاني أغمق عند التحريك */
     }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
+    .section {
+      padding: 200px 0; /* مسافات كبيرة جدًا بين الأقسام */
+    }
+    .quote-card {
+      background-color: #fff;
+      border-left: 5px solid #4CAF50; /* أخضر داكن */
+      padding: 20px;
       margin-bottom: 20px;
-      transition: transform 0.3s ease;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    .gallery img:hover {
-      transform: scale(1.05);
+    .quote-card h3 {
+      font-size: 1.5rem; /* زيادة حجم الخط */
+      color: #333;
     }
-    .footer {
-      background-color: #333; /* أسود غامق */
+    .quote-card p {
+      font-style: italic;
+      color: #555;
+    }
+    .content-section {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .content-section h2 {
+      font-size: 2rem; /* زيادة حجم الخط */
+      margin-bottom: 20px;
+    }
+    .content-section p {
+      font-size: 1.2rem; /* زيادة حجم الخط */
+      color: #555;
+    }
+    footer {
+      background-color: #333;
       color: #fff;
       text-align: center;
       padding: 20px 0;
@@ -84,27 +109,109 @@
     </div>
   </section>
 
-  <!-- Image Gallery -->
-  <section class="container my-5">
-    <h2 class="text-center mb-4">Featured Books</h2>
-    <div class="row">
-      <div class="col-md-3">
-        <img src="image1.jpg" alt="Book Cover 1" class="img-fluid gallery">
+  <!-- Quotes Section -->
+  <section class="section bg-light" id="quotes">
+    <div class="container">
+      <h2 class="text-center mb-4">Inspirational Quotes About Reading</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="quote-card">
+            <h3>"A reader lives a thousand lives before he dies."</h3>
+            <p>- George R.R. Martin</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="quote-card">
+            <h3>"Books are a uniquely portable magic."</h3>
+            <p>- Stephen King</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="quote-card">
+            <h3>"The more that you read, the more things you will know."</h3>
+            <p>- Dr. Seuss</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="quote-card">
+            <h3>"Reading is essential for those who seek to rise above the ordinary."</h3>
+            <p>- Jim Rohn</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <img src="image2.jpg" alt="Book Cover 2" class="img-fluid gallery">
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section bg-white" id="benefits">
+    <div class="container">
+      <h2 class="text-center mb-4">Why Reading is Important?</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="quote-card">
+            <h3>"Today a reader, tomorrow a leader."</h3>
+            <p>- Margaret Fuller</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="quote-card">
+            <h3>"The only thing that you absolutely have to know is the location of the library."</h3>
+            <p>- Albert Einstein</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="quote-card">
+            <h3>"Not all readers are leaders, but all leaders are readers."</h3>
+            <p>- Harry S. Truman</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="quote-card">
+            <h3>"Books are the mirrors of the soul."</h3>
+            <p>- Virginia Woolf</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <img src="image3.jpg" alt="Book Cover 3" class="img-fluid gallery">
+    </div>
+  </section>
+
+  <!-- Fourth Page: Books Content -->
+  <section class="section bg-light" id="books-content">
+    <div class="container">
+      <div class="content-section">
+        <h2>How Reading Can Change Your Life</h2>
+        <p>Reading is not just a hobby; it's a way to expand your mind, gain new perspectives, and grow as a person. Whether you're diving into fiction or exploring non-fiction, books can help you:</p>
+        <ul>
+          <li><strong>Increase Knowledge:</strong> Learn about new topics, cultures, and ideas.</li>
+          <li><strong>Improve Focus:</strong> Reading helps train your brain to concentrate better.</li>
+          <li><strong>Reduce Stress:</strong> A good book can be an escape from daily life.</li>
+          <li><strong>Enhance Vocabulary:</strong> The more you read, the richer your language becomes.</li>
+        </ul>
+        <p>So, why wait? Start your reading journey today and unlock the endless possibilities that books offer!</p>
       </div>
-      <div class="col-md-3">
-        <img src="image4.jpg" alt="Book Cover 4" class="img-fluid gallery">
+    </div>
+  </section>
+
+  <!-- Fifth Page: Additional Content -->
+  <section class="section bg-white" id="additional-content">
+    <div class="container">
+      <div class="content-section">
+        <h2>Top Genres for Book Lovers</h2>
+        <p>If you're looking for inspiration on what to read next, here are some popular genres that every book lover should explore:</p>
+        <ol>
+          <li><strong>Fiction:</strong> Dive into imaginary worlds and explore human emotions.</li>
+          <li><strong>Non-Fiction:</strong> Learn real-life stories, biographies, and self-help guides.</li>
+          <li><strong>Science Fiction:</strong> Explore futuristic worlds and technological advancements.</li>
+          <li><strong>Mystery & Thriller:</strong> Solve puzzles and keep yourself on the edge of your seat.</li>
+          <li><strong>Fantasy:</strong> Enter magical realms filled with dragons, wizards, and epic adventures.</li>
+        </ol>
+        <p>No matter which genre you choose, each book has the power to transform your perspective and enrich your life.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer Section -->
-  <footer class="footer">
+  <footer>
     <div class="container">
       <p>&copy; Best Book Summaries. All rights reserved.</p>
     </div>
