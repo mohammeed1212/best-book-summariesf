@@ -10,27 +10,55 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .header {
+      background-color: #4CAF50; /* أخضر داكن */
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
     }
     .hero-section {
-      background-color: #f8f9fa;
-      padding: 50px 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
     }
     .hero-section h1 {
       font-size: 3rem;
-      color: #007bff;
+      margin-bottom: 20px;
     }
     .hero-section p {
       font-size: 1.2rem;
-      color: #333;
+      margin-bottom: 30px;
+    }
+    .reviews-button {
+      background-color: #FFA726; /* برتقالي */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .reviews-button:hover {
+      background-color: #FB8C00; /* برتقاني أغمق عند التحريك */
     }
     .gallery img {
       width: 100%;
       height: auto;
       border-radius: 10px;
       margin-bottom: 20px;
+      transition: transform 0.3s ease;
     }
-    footer {
-      background-color: #333;
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      background-color: #333; /* أسود غامق */
       color: #fff;
       text-align: center;
       padding: 20px 0;
@@ -42,41 +70,41 @@
 </head>
 <body>
   <!-- Header Section -->
-  <header class="bg-primary text-white text-center py-4">
-    <h1>Welcome to Best Book Summaries</h1>
+  <header class="header">
+    <h1>Best Book Summaries</h1>
     <p>Discover the joy of reading and learning!</p>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero-section text-center">
+  <section class="hero-section">
     <div class="container">
-      <h1>Your Gateway to Knowledge</h1>
+      <h1>Read the comprehensive summary of your favorite book</h1>
       <p>Explore our curated collection of book summaries and reviews to find your next literary adventure.</p>
-      <a href="reviews.html" class="btn btn-primary btn-lg">Explore Reviews & Summaries</a>
+      <button class="reviews-button">Summaries & Reviews</button>
     </div>
   </section>
 
   <!-- Image Gallery -->
   <section class="container my-5">
     <h2 class="text-center mb-4">Featured Books</h2>
-    <div class="row gallery">
+    <div class="row">
       <div class="col-md-3">
-        <img src="image1.jpg" alt="Book Cover 1" class="img-fluid">
+        <img src="image1.jpg" alt="Book Cover 1" class="img-fluid gallery">
       </div>
       <div class="col-md-3">
-        <img src="image2.jpg" alt="Book Cover 2" class="img-fluid">
+        <img src="image2.jpg" alt="Book Cover 2" class="img-fluid gallery">
       </div>
       <div class="col-md-3">
-        <img src="image3.jpg" alt="Book Cover 3" class="img-fluid">
+        <img src="image3.jpg" alt="Book Cover 3" class="img-fluid gallery">
       </div>
       <div class="col-md-3">
-        <img src="image4.jpg" alt="Book Cover 4" class="img-fluid">
+        <img src="image4.jpg" alt="Book Cover 4" class="img-fluid gallery">
       </div>
     </div>
   </section>
 
   <!-- Footer Section -->
-  <footer>
+  <footer class="footer">
     <div class="container">
       <p>&copy; Best Book Summaries. All rights reserved.</p>
     </div>
