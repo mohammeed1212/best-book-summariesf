@@ -18,9 +18,12 @@
       color: #fff;
       padding: 50px 0;
       text-align: center;
+      background-image: url('https://via.placeholder.com/1200x500?text=Book+Reading'); /* صورة الهيدر */
+      background-size: cover;
+      background-position: center;
     }
     .hero-section {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg');
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x600?text=Explore+Books'); /* صورة hero section */
       background-size: cover;
       background-position: center;
       color: #fff;
@@ -49,7 +52,7 @@
       background-color: #FB8C00; /* برتقاني أغ darker عند التحريك */
     }
     .section {
-      padding: 200px 0; /* مسافات كبيرة جدًا بين الأقسام */
+      padding: 80px 0; /* تحسين المسافات */
     }
     .quote-card {
       background-color: #fff;
@@ -88,10 +91,23 @@
       text-align: center;
       padding: 20px 0;
     }
+    /* تحسين التوافق مع الجوال */
+    @media (max-width: 767px) {
+      .hero-section h1 {
+        font-size: 2.5rem;
+      }
+      .hero-section p {
+        font-size: 1.2rem;
+      }
+      .reviews-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+      }
+      .quote-card h3 {
+        font-size: 1.2rem;
+      }
+    }
   </style>
-
-  <!-- كود Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6775058788874383" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Header Section -->
@@ -105,7 +121,6 @@
     <div class="container">
       <h1>Read the comprehensive summary of your favorite book</h1>
       <p>Explore our curated collection of book summaries and reviews to find your next literary adventure.</p>
-      <!-- تعديل الزر ليشير إلى reviews.html -->
       <a href="reviews.html" class="reviews-button">Summaries & Reviews</a>
     </div>
   </section>
@@ -119,24 +134,28 @@
           <div class="quote-card">
             <h3>"A reader lives a thousand lives before he dies."</h3>
             <p>- George R.R. Martin</p>
+            <img src="https://via.placeholder.com/200x150?text=Reading+Quote+1" alt="Quote 1" class="img-fluid">
           </div>
         </div>
         <div class="col-md-6">
           <div class="quote-card">
             <h3>"Books are a uniquely portable magic."</h3>
             <p>- Stephen King</p>
+            <img src="https://via.placeholder.com/200x150?text=Reading+Quote+2" alt="Quote 2" class="img-fluid">
           </div>
         </div>
         <div class="col-md-6">
           <div class="quote-card">
             <h3>"The more that you read, the more things you will know."</h3>
             <p>- Dr. Seuss</p>
+            <img src="https://via.placeholder.com/200x150?text=Reading+Quote+3" alt="Quote 3" class="img-fluid">
           </div>
         </div>
         <div class="col-md-6">
           <div class="quote-card">
             <h3>"Reading is essential for those who seek to rise above the ordinary."</h3>
             <p>- Jim Rohn</p>
+            <img src="https://via.placeholder.com/200x150?text=Reading+Quote+4" alt="Quote 4" class="img-fluid">
           </div>
         </div>
       </div>
@@ -152,61 +171,30 @@
           <div class="quote-card">
             <h3>"Today a reader, tomorrow a leader."</h3>
             <p>- Margaret Fuller</p>
+            <img src="https://via.placeholder.com/200x150?text=Reading+Benefit+1" alt="Benefit 1" class="img-fluid">
           </div>
         </div>
         <div class="col-md-6">
           <div class="quote-card">
             <h3>"The only thing that you absolutely have to know is the location of the library."</h3>
             <p>- Albert Einstein</p>
+            <img src="https://via.placeholder.com/200x150?text=Reading+Benefit+2" alt="Benefit 2" class="img-fluid">
           </div>
         </div>
         <div class="col-md-6">
           <div class="quote-card">
             <h3>"Not all readers are leaders, but all leaders are readers."</h3>
             <p>- Harry S. Truman</p>
+            <img src="https://via.placeholder.com/200x150?text=Reading+Benefit+3" alt="Benefit 3" class="img-fluid">
           </div>
         </div>
         <div class="col-md-6">
           <div class="quote-card">
             <h3>"Books are the mirrors of the soul."</h3>
             <p>- Virginia Woolf</p>
+            <img src="https://via.placeholder.com/200x150?text=Reading+Benefit+4" alt="Benefit 4" class="img-fluid">
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Fourth Page: Books Content -->
-  <section class="section bg-light" id="books-content">
-    <div class="container">
-      <div class="content-section">
-        <h2>How Reading Can Change Your Life</h2>
-        <p>Reading is not just a hobby; it's a way to expand your mind, gain new perspectives, and grow as a person. Whether you're diving into fiction or exploring non-fiction, books can help you:</p>
-        <ul>
-          <li><strong>Increase Knowledge:</strong> Learn about new topics, cultures, and ideas.</li>
-          <li><strong>Improve Focus:</strong> Reading helps train your brain to concentrate better.</li>
-          <li><strong>Reduce Stress:</strong> A good book can be an escape from daily life.</li>
-          <li><strong>Enhance Vocabulary:</strong> The more you read, the richer your language becomes.</li>
-        </ul>
-        <p>So, why wait? Start your reading journey today and unlock the endless possibilities that books offer!</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Fifth Page: Additional Content -->
-  <section class="section bg-white" id="additional-content">
-    <div class="container">
-      <div class="content-section">
-        <h2>Top Genres for Book Lovers</h2>
-        <p>If you're looking for inspiration on what to read next, here are some popular genres that every book lover should explore:</p>
-        <ol>
-          <li><strong>Fiction:</strong> Dive into imaginary worlds and explore human emotions.</li>
-          <li><strong>Non-Fiction:</strong> Learn real-life stories, biographies, and self-help guides.</li>
-          <li><strong>Science Fiction:</strong> Explore futuristic worlds and technological advancements.</li>
-          <li><strong>Mystery & Thriller:</strong> Solve puzzles and keep yourself on the edge of your seat.</li>
-          <li><strong>Fantasy:</strong> Enter magical realms filled with dragons, wizards, and epic adventures.</li>
-        </ol>
-        <p>No matter which genre you choose, each book has the power to transform your perspective and enrich your life.</p>
       </div>
     </div>
   </section>
@@ -219,9 +207,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6775058788874383"
-     crossorigin="anonymous"></script>
