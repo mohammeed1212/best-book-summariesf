@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Discover the best book summaries online! Explore concise takeaways from popular books, find your next read, and enhance your knowledge with our curated collection. Perfect for busy readers and lifelong learners." />
   <link rel="canonical" href="https://booksummarieshub.com/" />
-  <title>Best Book Summaries - Your Source for Insightful Reading</title>
+  <title>Best Book Summaries - Key Insights from Top Books</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Custom CSS -->
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -70,7 +69,7 @@
       padding: 20px;
       margin-bottom: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       height: 100%;
     }
     .quote-card h3 {
@@ -86,7 +85,7 @@
       padding: 20px;
       margin-bottom: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     .content-section h2 {
       font-size: 2rem;
@@ -98,11 +97,16 @@
       font-size: 1.1rem;
       color: #555;
     }
-    .content-section img {
+    img {
       max-width: 100%;
       height: auto;
       border-radius: 8px;
       margin: 15px 0;
+    }
+    .quote-card img {
+      max-height: 200px;
+      object-fit: cover;
+      width: 100%;
     }
     footer {
       background-color: #333;
@@ -110,6 +114,19 @@
       text-align: center;
       padding: 20px 0;
       margin-top: 40px;
+    }
+
+    /* تحسينات للجوال */
+    @media (max-width: 768px) {
+      .hero-section {
+        padding: 60px 20px;
+      }
+      .hero-section h2 {
+        font-size: 1.8rem;
+      }
+      .quote-card img {
+        max-height: 150px;
+      }
     }
   </style>
 
@@ -120,7 +137,7 @@
 
   <!-- Header Section -->
   <header class="header">
-    <h1>Best Book Summaries Online - Discover Key Takeaways</h1>
+    <h1>Best Book Summaries Online - Concise Key Takeaways</h1>
     <p>Discover the joy of reading and learning!</p>
   </header>
 
@@ -143,28 +160,28 @@
           <div class="quote-card w-100">
             <h3>"A reader lives a thousand lives before he dies."</h3>
             <p>- George R.R. Martin</p>
-            <img src="https://images.pexels.com/photos/3747487/pexels-photo-3747487.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Person engrossed in reading a book in a library setting">
+            <img src="https://images.pexels.com/photos/3747487/pexels-photo-3747487.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Person engrossed in reading a book in a library setting" loading="lazy">
           </div>
         </div>
         <div class="col-12 col-md-6 d-flex">
           <div class="quote-card w-100">
             <h3>"Books are a uniquely portable magic."</h3>
             <p>- Stephen King</p>
-            <img src="https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Stack of colorful books on a wooden table">
+            <img src="https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Stack of colorful books on a wooden table" loading="lazy">
           </div>
         </div>
         <div class="col-12 col-md-6 d-flex">
           <div class="quote-card w-100">
             <h3>"The more that you read, the more things you will know."</h3>
             <p>- Dr. Seuss</p>
-            <img src="https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Open book with pages turning, symbolizing knowledge acquisition">
+            <img src="https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Open book with pages turning, symbolizing knowledge acquisition" loading="lazy">
           </div>
         </div>
         <div class="col-12 col-md-6 d-flex">
           <div class="quote-card w-100">
             <h3>"Reading is essential for those who seek to rise above the ordinary."</h3>
             <p>- Jim Rohn</p>
-            <img src="https://images.pexels.com/photos/2228580/pexels-photo-2228580.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Person reading a book outdoors, symbolizing aspiration and growth">
+            <img src="https://images.pexels.com/photos/2228580/pexels-photo-2228580.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Person reading a book outdoors, symbolizing aspiration and growth" loading="lazy">
           </div>
         </div>
       </div>
@@ -181,28 +198,28 @@
           <div class="quote-card w-100">
             <h3>"Today a reader, tomorrow a leader."</h3>
             <p>- Margaret Fuller</p>
-            <img src="https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Silhouette of a person reading against a sunset, symbolizing leadership">
+            <img src="https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Silhouette of a person reading against a sunset, symbolizing leadership" loading="lazy">
           </div>
         </div>
         <div class="col-12 col-md-6 d-flex">
           <div class="quote-card w-100">
             <h3>"The only thing that you absolutely have to know is the location of the library."</h3>
             <p>- Albert Einstein</p>
-            <img src="https://images.pexels.com/photos/1370296/pexels-photo-1370296.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Interior of a grand library with many bookshelves">
+            <img src="https://images.pexels.com/photos/1370296/pexels-photo-1370296.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Interior of a grand library with many bookshelves" loading="lazy">
           </div>
         </div>
         <div class="col-12 col-md-6 d-flex">
           <div class="quote-card w-100">
             <h3>"Not all readers are leaders, but all leaders are readers."</h3>
             <p>- Harry S. Truman</p>
-            <img src="https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Close-up of a person holding an open book, focused on text">
+            <img src="https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Close-up of a person holding an open book, focused on text" loading="lazy">
           </div>
         </div>
         <div class="col-12 col-md-6 d-flex">
           <div class="quote-card w-100">
             <h3>"Books are the mirrors of the soul."</h3>
             <p>- Virginia Woolf</p>
-            <img src="https://images.pexels.com/photos/2977304/pexels-photo-2977304.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Abstract image representing a soul reflecting in a book">
+            <img src="https://images.pexels.com/photos/2977304/pexels-photo-2977304.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Abstract image representing a soul reflecting in a book" loading="lazy">
           </div>
         </div>
       </div>
@@ -214,7 +231,7 @@
     <div class="container">
       <div class="content-section">
         <h2>How Reading Can Change Your Life</h2>
-        <img src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&w=600" alt="A bright lightbulb above an open book, symbolizing new ideas from reading">
+        <img src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&w=600" alt="A bright lightbulb above an open book, symbolizing new ideas from reading" loading="lazy">
         <p>Reading is not just a hobby; it's a way to expand your mind, gain new perspectives, and grow as a person. Whether you're diving into fiction or exploring non-fiction, books can help you:</p>
         <ul>
           <li><strong>Increase Knowledge:</strong> Learn about new topics, cultures, and ideas.</li>
@@ -232,7 +249,7 @@
     <div class="container">
       <div class="content-section">
         <h2>Top Genres for Book Lovers</h2>
-        <img src="https://images.pexels.com/photos/762687/pexels-photo-762687.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Variety of books from different genres displayed on a shelf">
+        <img src="https://images.pexels.com/photos/762687/pexels-photo-762687.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Variety of books from different genres displayed on a shelf" loading="lazy">
         <p>If you're looking for inspiration on what to read next, here are some popular genres that every book lover should explore:</p>
         <ol>
           <li><strong>Fiction:</strong> Dive into imaginary worlds and explore human emotions.</li>
@@ -249,9 +266,10 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; Best Book Summaries. All rights reserved.</p>
+      <p>&copy; 2025 Best Book Summaries Hub. All Rights Reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
 
