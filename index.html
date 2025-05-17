@@ -5,10 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Discover the best book summaries online! Explore concise takeaways from popular books, find your next read, and enhance your knowledge with our curated collection. Perfect for busy readers and lifelong learners." />
   <link rel="canonical" href="https://booksummarieshub.com/" />
-  <title>Best Book Summaries - Key Insights from Top Books</title>
+  <title>Best Book Summaries - For Curious & Busy Readers</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <style>
     body {
@@ -23,7 +30,7 @@
       text-align: center;
     }
     .hero-section {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background: linear-gradient(rgba(0, 0, 0, 0.5 ), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" );
       background-size: cover;
       background-position: center;
       color: #fff;
@@ -115,6 +122,112 @@
       padding: 20px 0;
       margin-top: 40px;
     }
+    .social-icons {
+      margin: 15px 0;
+    }
+    .social-icons a {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #4CAF50;
+    }
+    .contact-link {
+      color: #FFA726;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-link:hover {
+      color: #FB8C00;
+      text-decoration: underline;
+    }
+    
+    /* Contact Button Styles */
+    .contact-button {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background-color: #4CAF50;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    
+    .contact-button:hover {
+      background-color: #388E3C;
+      transform: scale(1.05);
+    }
+    
+    .contact-links {
+      position: fixed;
+      right: 90px;
+      bottom: 30px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: none;
+      flex-direction: column;
+      z-index: 999;
+    }
+    
+    .contact-links a {
+      color: #333;
+      text-decoration: none;
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      transition: color 0.3s ease;
+    }
+    
+    .contact-links a i {
+      margin-right: 10px;
+      color: #4CAF50;
+    }
+    
+    .contact-links a:hover {
+      color: #4CAF50;
+    }
+    
+    .top-contact-btn {
+      background-color: #FFA726;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 15px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .top-contact-btn:hover {
+      background-color: #FB8C00;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+    }
+    
+    .navbar-brand {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
 
     /* تحسينات للجوال */
     @media (max-width: 768px) {
@@ -127,17 +240,56 @@
       .quote-card img {
         max-height: 150px;
       }
+      .contact-links {
+        right: 20px;
+        bottom: 90px;
+      }
     }
   </style>
 
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6775058788874383" crossorigin="anonymous"></script>
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Book Summaries Hub",
+    "url": "https://booksummarieshub.com/",
+    "description": "Discover the best book summaries online for curious and busy readers.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://booksummarieshub.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Book Summaries Hub",
+    "url": "https://booksummarieshub.com/",
+    "logo": "https://booksummarieshub.com/logo.png",
+    "email": "mohammeediyad778@gmail.com",
+    "sameAs": [
+      "https://www.facebook.com/share/19ALfaCUuJ/?mibextid=wwXIfr",
+      "https://www.instagram.com/book_summarieshub?igsh=ZDhyMHZveGkybjBi&utm_source=qr"
+    ]
+  }
+  </script>
 </head>
 <body>
+  <!-- Navbar with Contact Button -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">Book Summaries Hub</a>
+    <button id="top-contact-btn" class="top-contact-btn">Contact Us</button>
+  </nav>
 
   <!-- Header Section -->
   <header class="header">
-    <h1>Best Book Summaries Online - Concise Key Takeaways</h1>
+    <h1>Discover the Wisdom Inside Every Book</h1>
     <p>Discover the joy of reading and learning!</p>
   </header>
 
@@ -267,9 +419,54 @@
   <footer>
     <div class="container">
       <p>&copy; 2025 Best Book Summaries Hub. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/19ALfaCUuJ/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/book_summarieshub?igsh=ZDhyMHZveGkybjBi&utm_source=qr" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p><a href="mailto:mohammeediyad778@gmail.com" class="contact-link">Contact Us: mohammeediyad778@gmail.com</a></p>
     </div>
   </footer>
 
+  <!-- Floating Contact Button -->
+  <div id="contact-button" class="contact-button" tabindex="0" role="button" aria-label="Contact options">
+    <i class="fas fa-comment"></i>
+  </div>
+
+  <!-- Contact Links Popup -->
+  <div id="contact-links" class="contact-links">
+    <a href="mailto:mohammeediyad778@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
+    <a href="https://www.facebook.com/share/19ALfaCUuJ/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+    <a href="https://www.instagram.com/book_summarieshub?igsh=ZDhyMHZveGkybjBi&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  </div>
+
+  <script>
+    // عناصر الأزرار والروابط
+    const contactButton = document.getElementById('contact-button' );
+    const contactLinks = document.getElementById('contact-links');
+
+    // تبديل ظهور روابط الاتصال عند الضغط على الزر الجانبي
+    contactButton.addEventListener('click', () => {
+      if (contactLinks.style.display === 'flex') {
+        contactLinks.style.display = 'none';
+      } else {
+        contactLinks.style.display = 'flex';
+      }
+    });
+
+    // إمكانية التحكم بالزر عبر لوحة المفاتيح (Enter أو Space)
+    contactButton.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        contactButton.click();
+      }
+    });
+
+    // زر الاتصال العلوي
+    const topContactBtn = document.getElementById('top-contact-btn');
+    topContactBtn.addEventListener('click', () => {
+      window.location.href = 'mailto:mohammeediyad778@gmail.com';
+    });
+  </script>
+
 </body>
 </html>
-
