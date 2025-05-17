@@ -252,19 +252,28 @@
   
   <!-- Structured Data -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Book Summaries Hub",
+  "url": "https://booksummarieshub.com/",
+  "description": "Discover the best book summaries online for curious and busy readers.",
+  "publisher": {
+    "@type": "Organization",
     "name": "Book Summaries Hub",
-    "url": "https://booksummarieshub.com/",
-    "description": "Discover the best book summaries online for curious and busy readers.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://booksummarieshub.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://booksummarieshub.com/favicon.ico"
     }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://booksummarieshub.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
   }
-  </script>
+}
+</script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
