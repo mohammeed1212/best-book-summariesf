@@ -1,0 +1,8 @@
+# إعادة التوجيه من HTTP إلى HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# إعادة التوجيه من index.html إلى المجلد الرئيسي
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.* )index\.html$ /$1 [L,R=301]
