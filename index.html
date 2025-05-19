@@ -8,8 +8,8 @@
   <title>Best Book Summaries - For Curious & Busy Readers</title>
   
   <!-- Favicon -->
-  <link rel="icon" href="images/favicon.png" type="image/png">
-  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href="images/og-image.jpg" type="image/jpg">
+  <link rel="shortcut icon" href="images/og-image.jpg" type="image/jpg">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -30,7 +30,7 @@
       text-align: center;
     }
     .hero-section {
-      background: linear-gradient(rgba(0, 0, 0, 0.5 ), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" );
+      background: linear-gradient(rgba(0, 0, 0, 0.5  ), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  );
       background-size: cover;
       background-position: center;
       color: #fff;
@@ -54,6 +54,8 @@
       font-size: 1.1rem;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.1s ease-out;
+      text-decoration: none;
+      display: inline-block;
     }
     .reviews-button:hover {
       background-color: #FB8C00;
@@ -227,6 +229,13 @@
       font-weight: bold;
       font-size: 1.2rem;
       text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    
+    .site-logo {
+      height: 30px;
+      margin-right: 10px;
     }
 
     /* تحسينات للجوال */
@@ -252,35 +261,26 @@
   
   <!-- Structured Data -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Book Summaries Hub",
-  "url": "https://booksummarieshub.com/",
-  "description": "Discover the best book summaries online for curious and busy readers.",
-  "publisher": {
-    "@type": "Organization",
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
     "name": "Book Summaries Hub",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://booksummarieshub.com/favicon.ico"
+    "url": "https://booksummarieshub.com/",
+    "description": "Discover the best book summaries online for curious and busy readers.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://booksummarieshub.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
     }
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://booksummarieshub.com/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
   }
-}
-</script>
-
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Book Summaries Hub",
     "url": "https://booksummarieshub.com/",
-    "logo": "https://booksummarieshub.com/logo.png",
+    "logo": "https://booksummarieshub.com/images/og-image.jpg",
     "email": "mohammeediyad778@gmail.com",
     "sameAs": [
       "https://www.facebook.com/share/19ALfaCUuJ/?mibextid=wwXIfr",
@@ -292,14 +292,17 @@
 <body>
   <!-- Navbar with Contact Button -->
   <nav class="navbar">
-    <a href="index.html" class="navbar-brand">Book Summaries Hub</a>
+    <a href="index.html" class="navbar-brand">
+      <img src="images/og-image.jpg" alt="Book Summaries Hub Logo" class="site-logo">
+      Book Summaries Hub
+    </a>
     <button id="top-contact-btn" class="top-contact-btn">Contact Us</button>
   </nav>
 
   <!-- Header Section -->
   <header class="header">
     <h1>Discover the Wisdom Inside Every Book</h1>
-    <p>Discover the joy of reading and learning!</p>
+    <p>Experience the joy of reading and learning!</p>
   </header>
 
   <!-- Hero Section -->
@@ -429,8 +432,8 @@
     <div class="container">
       <p>&copy; 2025 Best Book Summaries Hub. All Rights Reserved.</p>
       <div class="social-icons">
-        <a href="https://www.facebook.com/share/19ALfaCUuJ/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/book_summarieshub?igsh=ZDhyMHZveGkybjBi&utm_source=qr" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/19ALfaCUuJ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/book_summarieshub?igsh=ZDhyMHZveGkybjBi&utm_source=qr" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
       <p><a href="mailto:mohammeediyad778@gmail.com" class="contact-link">Contact Us: mohammeediyad778@gmail.com</a></p>
     </div>
@@ -444,8 +447,8 @@
   <!-- Contact Links Popup -->
   <div id="contact-links" class="contact-links">
     <a href="mailto:mohammeediyad778@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
-    <a href="https://www.facebook.com/share/19ALfaCUuJ/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-    <a href="https://www.instagram.com/book_summarieshub?igsh=ZDhyMHZveGkybjBi&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="https://www.facebook.com/share/19ALfaCUuJ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a>
+    <a href="https://www.instagram.com/book_summarieshub?igsh=ZDhyMHZveGkybjBi&utm_source=qr" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
   </div>
 
   <script>
@@ -476,6 +479,5 @@
       window.location.href = 'mailto:mohammeediyad778@gmail.com';
     });
   </script>
-
 </body>
 </html>
