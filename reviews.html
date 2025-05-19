@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Reviews & Summaries</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Book Summaries & Reviews | Rich Dad, Atomic Habits & More</title>
+  <meta name="description" content="Explore detailed book summaries and reviews for popular titles like Rich Dad Poor Dad, Atomic Habits, and The 7 Habits of Highly Effective People. Improve your knowledge with concise and insightful summaries." />
+  <meta name="keywords" content="book summaries, book reviews, Rich Dad Poor Dad summary, Atomic Habits summary, 7 Habits summary, best book summaries" />
+  <meta name="author" content="Book Summaries Hub" />
+  <link rel="canonical" href="https://www.booksummarieshub.com/reviews.html" />
+
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,10 +20,25 @@
       line-height: 1.6;
     }
     .header {
-      background-color: #007bff; /* أزرق داكن */
+      background-color: #007bff;
       color: #fff;
       padding: 30px 0;
       text-align: center;
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .logo-title img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+    }
+    .logo-title h1 {
+      margin: 0;
+      font-size: 2rem;
     }
     .book-card {
       background-color: #fff;
@@ -43,6 +64,17 @@
     .author {
       font-style: italic;
       color: #007bff;
+      margin-bottom: 15px;
+    }
+    .book-image {
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     footer {
       background-color: #333;
@@ -52,89 +84,80 @@
     }
   </style>
 
-  <!-- كود Google AdSense -->
+  <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6775058788874383" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Header Section -->
   <header class="header">
-    <h1>Book Reviews & Summaries</h1>
+    <div class="logo-title">
+      <img src="logo.png" alt="Book Summaries Hub Logo" />
+      <h1>Book Summaries & Reviews</h1>
+    </div>
     <p>Explore summaries and reviews of the best-selling books!</p>
   </header>
 
-  <!-- Main Content -->
-  <section class="container my-5">
+  <main class="container my-5">
     <h2 class="text-center mb-4">Featured Books</h2>
-    <div class="row">
-      <!-- Book 1: Rich Dad Poor Dad -->
-      <div class="col-md-6">
+    <section class="row" aria-label="Featured book summaries">
+      
+      <!-- Book 1 -->
+      <article class="col-md-6" itemscope itemtype="https://schema.org/Book">
         <div class="book-card">
-          <h3>Rich Dad Poor Dad</h3>
-          <p>This book is a classic guide to financial literacy and wealth-building. It teaches you how to think differently about money and investments.</p>
-          <p class="author">Author: Robert T. Kiyosaki</p>
-          <a href="rich-dad-poor-dad-summary.html" class="btn btn-primary">Read Summary</a>
+          <img src="https://m.media-amazon.com/images/I/81bsw6fnUiL.jpg" alt="Rich Dad Poor Dad Book Cover" title="Rich Dad Poor Dad - Robert T. Kiyosaki" class="book-image" itemprop="image" loading="lazy" width="150" height="225" />
+          <h3 itemprop="name">Rich Dad Poor Dad</h3>
+          <p itemprop="description">This book is a classic guide to financial literacy and wealth-building. It teaches you how to think differently about money and investments.</p>
+          <p class="author" itemprop="author">Author: Robert T. Kiyosaki</p>
+          <a href="rich-dad-poor-dad-summary.html" class="btn btn-primary" aria-label="Read summary of Rich Dad Poor Dad">Read Summary</a>
         </div>
-      </div>
+      </article>
 
-      <!-- Book 2: The 7 Habits of Highly Effective People -->
-      <div class="col-md-6">
+      <!-- Book 2 -->
+      <article class="col-md-6" itemscope itemtype="https://schema.org/Book">
         <div class="book-card">
-          <h3>The 7 Habits of Highly Effective People</h3>
-          <p>This timeless self-help book provides practical advice on personal and professional effectiveness through seven powerful habits.</p>
-          <p class="author">Author: Stephen R. Covey</p>
-          <a href="7-habits-summary.html" class="btn btn-primary">Read Summary</a>
+          <img src="https://m.media-amazon.com/images/I/71UypkUjStL.jpg" alt="7 Habits of Highly Effective People Book Cover" title="The 7 Habits of Highly Effective People - Stephen R. Covey" class="book-image" itemprop="image" loading="lazy" width="150" height="225" />
+          <h3 itemprop="name">The 7 Habits of Highly Effective People</h3>
+          <p itemprop="description">This timeless self-help book provides practical advice on personal and professional effectiveness through seven powerful habits.</p>
+          <p class="author" itemprop="author">Author: Stephen R. Covey</p>
+          <a href="7-habits-summary.html" class="btn btn-primary" aria-label="Read summary of The 7 Habits of Highly Effective People">Read Summary</a>
         </div>
-      </div>
+      </article>
 
-      <!-- Book 3: Atomic Habits -->
-      <div class="col-md-6">
+      <!-- Book 3 -->
+      <article class="col-md-6" itemscope itemtype="https://schema.org/Book">
         <div class="book-card">
-          <h3>Atomic Habits</h3>
-          <p>An insightful book on building small habits that lead to remarkable results.</p>
-          <p class="author">Author: James Clear</p>
-          <a href="atomic-habits-summary.html" class="btn btn-primary">Read Summary</a>
+          <img src="https://m.media-amazon.com/images/I/51-nXsSRfZL._SX329_BO1,204,203,200_.jpg" alt="Atomic Habits Book Cover" title="Atomic Habits - James Clear" class="book-image" itemprop="image" loading="lazy" width="150" height="225" />
+          <h3 itemprop="name">Atomic Habits</h3>
+          <p itemprop="description">An insightful book on building small habits that lead to remarkable results.</p>
+          <p class="author" itemprop="author">Author: James Clear</p>
+          <a href="atomic-habits-summary.html" class="btn btn-primary" aria-label="Read summary of Atomic Habits">Read Summary</a>
         </div>
-      </div>
+      </article>
 
-      <!-- Book 4: The Girl with the Dragon Tattoo -->
-      <div class="col-md-6">
+      <!-- Book 4 -->
+      <article class="col-md-6" itemscope itemtype="https://schema.org/Book">
         <div class="book-card">
-          <h3>The Girl with the Dragon Tattoo</h3>
-          <p>A gripping mystery novel that follows journalist Mikael Blomkvist and hacker Lisbeth Salander.</p>
-          <p class="author">Author: Stieg Larsson</p>
-          <a href="dragon-tattoo-summary.html" class="btn btn-primary">Read Summary</a>
+          <img src="https://m.media-amazon.com/images/I/51v5ZpFyaFL._SX329_BO1,204,203,200_.jpg" alt="The Girl with the Dragon Tattoo Book Cover" title="The Girl with the Dragon Tattoo - Stieg Larsson" class="book-image" itemprop="image" loading="lazy" width="150" height="225" />
+          <h3 itemprop="name">The Girl with the Dragon Tattoo</h3>
+          <p itemprop="description">A gripping mystery novel that follows journalist Mikael Blomkvist and hacker Lisbeth Salander.</p>
+          <p class="author" itemprop="author">Author: Stieg Larsson</p>
+          <a href="dragon-tattoo-summary.html" class="btn btn-primary" aria-label="Read summary of The Girl with the Dragon Tattoo">Read Summary</a>
         </div>
-      </div>
-    </div>
+      </article>
+
+    </section>
 
     <div class="text-center mt-5">
       <a href="index.html" class="btn btn-secondary">Back to Home</a>
     </div>
-  </section>
+  </main>
 
-  <!-- Footer Section (Removed Copyright) -->
   <footer>
     <div class="container">
-      <p></p> <!-- الحقوق تم إزالتها -->
+      <p>&copy; 2025 Book Summaries Hub. All rights reserved.</p>
     </div>
   </footer>
 </body>
 </html>
-
-
-
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6775058788874383"
-     crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
-
 
 
 
